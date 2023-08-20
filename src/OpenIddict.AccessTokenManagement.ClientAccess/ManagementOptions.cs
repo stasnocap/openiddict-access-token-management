@@ -3,7 +3,7 @@ using OpenIddict.AccessTokenManagement.ClientAccess.Unauthorized;
 namespace OpenIddict.AccessTokenManagement.ClientAccess;
 
 /// <summary>
-/// If you add something, add to ClientCredentialsTokenManagementServiceCollectionExtensions.ConfigureManagementOptions
+/// If you add something, add to ClientTokenManagementServiceCollectionExtensions.ConfigureManagementOptions
 /// </summary>
 public class ManagementOptions
 {

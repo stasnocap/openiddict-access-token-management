@@ -66,7 +66,7 @@ public static class ClientTokenManagementServiceCollectionExtensions
     /// <param name="tokenClientName">The name of the token client.</param>
     /// <param name="configureClient">Additional configuration with service provider instance.</param>
     /// <returns></returns>
-    public static IHttpClientBuilder AddClientCredentialsHttpClient(
+    public static IHttpClientBuilder AddClientAccessHttpClient(
         this IServiceCollection services,
         string httpClientName,
         Action<IServiceProvider, HttpClient>? configureClient = null)
@@ -76,11 +76,11 @@ public static class ClientTokenManagementServiceCollectionExtensions
         if (configureClient != null)
         {
             return services.AddHttpClient(httpClientName, configureClient)
-                .AddClientCredentialsTokenHandler(httpClientName);
+                .AddClientAccessTokenHandler(httpClientName);
         }
 
         return services.AddHttpClient(httpClientName)
-            .AddClientCredentialsTokenHandler(httpClientName);
+            .AddClientAccessTokenHandler(httpClientName);
     }
 
     /// <summary>
@@ -89,7 +89,7 @@ public static class ClientTokenManagementServiceCollectionExtensions
     /// <param name="httpClientBuilder"></param>
     /// <param name="tokenClientName"></param>
     /// <returns></returns>
-    public static IHttpClientBuilder AddClientCredentialsTokenHandler(
+    public static IHttpClientBuilder AddClientAccessTokenHandler(
         this IHttpClientBuilder httpClientBuilder,
         string tokenClientName)
     {
@@ -100,9 +100,9 @@ public static class ClientTokenManagementServiceCollectionExtensions
             var accessTokenManagementService = provider.GetRequiredService<IClientTokenManagementService>();
             var logger = provider.GetRequiredService<ILogger<ClientTokenHandler>>();
             var managementOptions = provider.GetRequiredService<IOptions<ManagementOptions>>();
-            var clientCredentialsTokenManagementOptions = provider.GetRequiredService<IOptions<ClientTokenManagementOptions>>();
+            var clientTokenManagementOptions = provider.GetRequiredService<IOptions<ClientTokenManagementOptions>>();
 
-            return new ClientTokenHandler(clientCredentialsTokenManagementOptions, managementOptions, accessTokenManagementService, logger,
+            return new ClientTokenHandler(clientTokenManagementOptions, managementOptions, accessTokenManagementService, logger,
                 tokenClientName);
         });
     }
