@@ -15,14 +15,14 @@ public class ClientTokenHandler : AccessTokenHandler
     private readonly string _tokenClientName;
 
     public ClientTokenHandler(
-        IOptions<ClientTokenManagementOptions> clientCredentialsTokenManagementOptions, 
+        IOptions<ClientTokenManagementOptions> clientTokenManagementOptions, 
         IOptions<ManagementOptions> managementOptions,
         IClientTokenManagementService accessTokenManagementService,
         ILogger<ClientTokenHandler> logger,
         string tokenClientName) 
         : base(managementOptions, logger)
     {
-        _clientTokenManagementOptions = clientCredentialsTokenManagementOptions.Value;
+        _clientTokenManagementOptions = clientTokenManagementOptions.Value;
         _accessTokenManagementService = accessTokenManagementService;
         _tokenClientName = tokenClientName;
     }
