@@ -1,9 +1,15 @@
 # openiddict-access-token-management
 Automatic token management for machine to machine and user-centric web app OAuth and OIDC flows
 
-The project is highly inspired by [Duende.AccessTokenManagement](https://github.com/DuendeSoftware/Duende.AccessTokenManagement) (refactored to work with [OpenIddictClientService](https://github.com/openiddict/openiddict-core/blob/e3075f60b52329e2d2be37b060882a92b3b2e4f8/src/OpenIddict.Client/OpenIddictClientService.cs#L19)) 
+The project is highly inspired by [Duende.AccessTokenManagement](https://github.com/DuendeSoftware/Duende.AccessTokenManagement) (refactored to work with [OpenIddictClientService](https://github.com/openiddict/openiddict-core/blob/e3075f60b52329e2d2be37b060882a92b3b2e4f8/src/OpenIddict.Client/OpenIddictClientService.cs#L19))
 
 ## Client credentials
+
+```xml
+<ItemGroup>
+    <PackageReference Include="stasnocap.OpenIddict.AccessTokenManagement.ClientAccess" Version="1.0.0" />
+</ItemGroup>
+```
 
 ### Setup
 
@@ -125,6 +131,12 @@ public class WorkerHttpClient : BackgroundService
 ```
 
 ## User
+
+```xml
+<ItemGroup>
+    <PackageReference Include="stasnocap.OpenIddict.AccessTokenManagement.UserAccess" Version="1.0.0" />
+</ItemGroup>
+```
 
 ### Setup
 
