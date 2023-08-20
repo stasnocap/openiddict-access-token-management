@@ -17,7 +17,7 @@ public static class ClientTokenManagementServiceCollectionExtensions
     /// <param name="services"></param>
     /// <param name="configureOptions"></param>
     /// <returns></returns>
-    public static IServiceCollection AddClientCredentialsTokenManagement(
+    public static IServiceCollection AddClientAccessTokenManagement(
         this IServiceCollection services,
         Action<ClientTokenManagementOptions>? configureOptions = null)
     {
