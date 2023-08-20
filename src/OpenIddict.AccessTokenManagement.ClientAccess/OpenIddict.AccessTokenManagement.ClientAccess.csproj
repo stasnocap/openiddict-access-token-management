@@ -7,6 +7,14 @@
         <Nullable>enable</Nullable>
         <Configurations>Debug;Release;</Configurations>
         <Platforms>AnyCPU</Platforms>
+        <RepositoryUrl>https://github.com/stasnocap/openiddict-access-token-management</RepositoryUrl>
+        <RootNamespace>OpenIddict.AccessTokenManagement.ClientAccess</RootNamespace>
+        <PackageId>stasnocap.OpenIddict.AccessTokenManagement.ClientAccess</PackageId>
+        <Title>Access token management for machine to machine flow</Title>
+        <Authors>stasnocap</Authors>
+        <Description>Automatic token management for machine to machine web app OAuth and OIDC flows</Description>
+        <PackageLicenseUrl>https://github.com/stasnocap/openiddict-access-token-management/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
     <ItemGroup>
