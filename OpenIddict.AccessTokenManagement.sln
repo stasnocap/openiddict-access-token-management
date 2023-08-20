@@ -1,31 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 #
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIddict.AccessTokenManagement", "src\OpenIddict.AccessTokenManagement\OpenIddict.AccessTokenManagement.csproj", "{D00FFBDB-A41F-4323-9FC2-197467D4C82D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIddict.AccessTokenManagement.ClientAccess", "src\OpenIddict.AccessTokenManagement.ClientAccess\OpenIddict.AccessTokenManagement.ClientAccess.csproj", "{17144F68-D48B-4951-BC77-EC6C4A74B2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIddict.AccessTokenManagement.UserAccess", "src\OpenIddict.AccessTokenManagement.UserAccess\OpenIddict.AccessTokenManagement.UserAccess.csproj", "{B5AEEEE3-E773-4C91-B736-20219C87F293}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|x64.Build.0 = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Debug|x86.Build.0 = Debug|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|x64.ActiveCfg = Release|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|x64.Build.0 = Release|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|x86.ActiveCfg = Release|Any CPU
-		{D00FFBDB-A41F-4323-9FC2-197467D4C82D}.Release|x86.Build.0 = Release|Any CPU
+		{17144F68-D48B-4951-BC77-EC6C4A74B2AF}.|Any CPU.ActiveCfg = |Any CPU
+		{17144F68-D48B-4951-BC77-EC6C4A74B2AF}.|Any CPU.Build.0 = |Any CPU
+		{B5AEEEE3-E773-4C91-B736-20219C87F293}.|Any CPU.ActiveCfg = |Any CPU
+		{B5AEEEE3-E773-4C91-B736-20219C87F293}.|Any CPU.Build.0 = |Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		|Any CPU = |Any CPU
 	EndGlobalSection
 EndGlobal
