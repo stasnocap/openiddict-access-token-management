@@ -48,7 +48,7 @@ services.AddClientAccessTokenManagement(options => {
 ### HTTP Client Factory
 
 ```csharp
-services.AddClientCredentialsHttpClient("invoices", "invoice.client", client =>
+services.AddClientAccessHttpClient("invoices", "invoice.client", client =>
 {
     client.BaseAddress = new Uri("https://apis.company.com/invoice/");
 });
@@ -59,7 +59,7 @@ services.AddHttpClient<CatalogClient>(client =>
     {
         client.BaseAddress = new Uri("https://apis.company.com/catalog/");
     })
-    .AddClientCredentialsTokenHandler("catalog.client");
+    .AddClientAccessTokenHandler("catalog.client");
 ```
 
 ### Usage
